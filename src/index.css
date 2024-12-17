@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box; 
+}
+
+:root {
+  font-family: "Monstserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.divider {
+  border-top: 1px solid #ccc; 
+  margin: 2px 0; 
+}
+body {
+  margin: 0; 
+  display: flex;
+  align-items: stretch; 
+  justify-content: stretch;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%; 
+  width: 100%; 
+  align-items: stretch;
+}
+
+.p5-wrapper {
+  flex: 3; 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.text-section {
+  flex: 1; 
+  padding: 20px; 
+  overflow-y: auto; 
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.text-section h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.text-section p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #000000;
+}
+
+.button-group {
+  display: flex; 
+  width: 100%; 
+  gap: 0; 
+}
+
+button {
+  flex: 1; 
+  height: auto; 
+  border-radius: 0; 
+  border: 1px solid transparent;
+  padding: 0.6em; 
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #480b0b;
+  background-color: #480b0b;
+}
+
+.buttoncut {
+  border-color: #480b0b;
+  background-color: #480b0b;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

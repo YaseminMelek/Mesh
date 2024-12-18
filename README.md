@@ -1,6 +1,6 @@
 Instructions and Rules
 
-![alt text](https://git.arts.ac.uk/23009192/Thesis_YaseminMelek/blob/main/instructions.png)
+![alt text](https://github.com/YaseminMelek/Mesh/blob/main/instructions.png)
 
 Bugs
 1) There are bugs with the interpreter with some move sequences if popped. For instance with sequences involving different axes (move x+ , move y- , pop), the interpreter doesn't print the values correctly. If the sequences are in the same axis (move y-, move y+, pop), the operations work.
